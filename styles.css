@@ -40,6 +40,17 @@ ul{
     flex-direction: column;
     justify-content: space-between; */
 }
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+.header-left >img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #F9FAF8;
+}
 .hero-image{
     width: 450px;
     align-self: center;
@@ -77,6 +88,10 @@ ul{
     border-radius: 8px;  
     font-weight: 900;  
 }
+.hero-button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+}
 .random-section{
     background-color: #F9FAF8;
     display: flex;
@@ -102,9 +117,16 @@ ul{
 .item-image{
     width: 140px;
     height: 140px;
-    border: 4px solid #3882F6;
+    border: 4px solid #8f959e;
     border-radius: 10px;
     margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+.item-image >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .quote-section{
     background-color: #E5E7EB;
@@ -126,4 +148,37 @@ ul{
 .quote-container{
 display: flex;
 flex-direction: column;
+}
+.signup-section{
+    background-color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+.signup-content{
+    background-color:#3882F6;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 50px;
+    color: #F9FAF8;
+}
+.signup-section button{
+    background-color: #3882F6;
+    border:1px solid #F9FAF8 ;
+    font-size: 16px;
+    color: #F9FAF8;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.signup-section button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    color:#F9FAF8;
+    padding: 20px;
 }
