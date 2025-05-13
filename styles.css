@@ -36,10 +36,19 @@ ul{
 
 .hero-main{
     width: 450px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 .hero-image{
     width: 450px;
     align-self: center;
+}
+.hero-image >img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .hero-content{
     display: flex;
@@ -54,6 +63,9 @@ ul{
 }
 .hero-main >p,li{
     font-size: 18px;
+}
+.hero-main >p{
+    margin:10px 0;
 }
 .hero-button{
     background-color: #3882F6;
@@ -93,4 +105,25 @@ ul{
     border: 4px solid #3882F6;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.quote-section{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+.quote-content{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    width: 720px;  
+}
+.quote-author{
+    align-self: flex-end;
+    font-size: 19px;
+}
+.quote-container{
+display: flex;
+flex-direction: column;
 }
